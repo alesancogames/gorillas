@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading...</title>
+  <link rel="shortcut icon" href="https://alesancogames.com/images/favicon.png" type="">
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="AlesancoGames">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $("#loading").fadeIn(2000);
+    $("#loading").fadeOut(2000, function() {
+      window.location = 'game.html';
+    });
+  });
+  </script>
+  <style type="text/css">
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <p id="loading" style="display:none;"><img src="https://alesancogames.com/images/logo.png" /></p>
+  </div>
+</body>
+</html>
+
